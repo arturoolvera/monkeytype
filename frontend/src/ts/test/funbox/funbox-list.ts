@@ -255,6 +255,14 @@ const list: MonkeyTypes.FunboxMetadata[] = [
       "wordOrder:reverse",
     ],
   },
+  {
+    name: "uuid",
+    info: "For randos",
+    properties: ["ignoresLanguage", "ignoresLayout", "noLetters"],
+    forcedConfig: {
+      numbers: [false],
+    },
+  },
 ];
 
 export function getAll(): MonkeyTypes.FunboxMetadata[] {

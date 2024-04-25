@@ -20,6 +20,7 @@ import {
 } from "./funbox-validation";
 import { Wordset } from "../wordset";
 import * as LayoutfluidFunboxTimer from "./layoutfluid-funbox-timer";
+import { v4 as uuidv4 } from "uuid";
 
 const prefixSize = 2;
 
@@ -496,6 +497,12 @@ FunboxList.setFunboxFunctions("IPv6", {
 FunboxList.setFunboxFunctions("binary", {
   getWord(): string {
     return Misc.getBinary();
+  },
+});
+
+FunboxList.setFunboxFunctions("uuid", {
+  getWord(): string {
+    return uuidv4();
   },
 });
 

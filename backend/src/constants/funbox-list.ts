@@ -331,6 +331,16 @@ const FunboxList: MonkeyTypes.FunboxMetadata[] = [
     canGetPb: true,
     difficultyLevel: 3,
   },
+  {
+    name: "uuid",
+    properties: ["ignoresLanguage", "ignoresLayout", "noLetters"],
+    frontendFunctions: ["getWord", "punctuateWord", "rememberSettings"],
+    frontendForcedConfig: {
+      numbers: [false],
+    },
+    canGetPb: false,
+    difficultyLevel: 1,
+  },
 ];
 
 export default FunboxList;
